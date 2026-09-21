@@ -1,0 +1,25 @@
+<section class="panel" aria-label="Entrada del código">
+  <div class="entrada">
+    <div class="campo">
+      <div class="input-shell">
+        <span class="hash" aria-hidden="true">#</span>
+        <input
+          id="codigo"
+          type="text"
+          autocomplete="off"
+          spellcheck="false"
+          maxlength="6"
+          aria-label="Código de 6 dígitos"
+          [value]="borrador()"
+          (input)="alEscribir($event)"
+          (keydown.enter)="show()"
+        />
+      </div>
+    </div>
+    <button class="accion" type="button" (click)="show()">Show</button>
+  </div>
+
+  @if (aviso()) {
+    <p class="aviso" role="status">{{ aviso() }}</p>
+  }
+</section>

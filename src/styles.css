@@ -1,0 +1,70 @@
+/* Estilos globales: tokens de color, tipografía y fondo cuadriculado. */
+
+:root {
+  --paper: #eff3f5;
+  --grid: #dce5ea;
+  --surface: #ffffff;
+  --ink: #121820;
+  --muted: #5b6873;
+  --line: #d3dce2;
+  --line-strong: #b4c1ca;
+  --accent: #0e6e87;
+  --accent-ink: #ffffff;
+  --ch-r: #d3453f;
+  --ch-g: #2e8b49;
+  --ch-b: #2f63c8;
+  --danger: #b3261e;
+  --shadow:
+    0 1px 2px rgba(18, 24, 32, 0.06),
+    0 8px 24px rgba(18, 24, 32, 0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0d1114;
+    --grid: #171d22;
+    --surface: #161c21;
+    --ink: #e7eef3;
+    --muted: #93a1ab;
+    --line: #28323a;
+    --line-strong: #3a4750;
+    --accent: #58c6e2;
+    --accent-ink: #06181e;
+    --ch-r: #f0736c;
+    --ch-g: #61c47e;
+    --ch-b: #7ca2f5;
+    --danger: #f0736c;
+    --shadow:
+      0 1px 2px rgba(0, 0, 0, 0.4),
+      0 10px 28px rgba(0, 0, 0, 0.35);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

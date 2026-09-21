@@ -1,0 +1,23 @@
+<div class="wrap">
+  <header>
+    <h1>Decodificador de Color</h1>
+  </header>
+
+  <app-codigo />
+
+  <div class="resultado">
+    <section aria-label="Canales">
+      <p class="bloque-tit">Pares → canales</p>
+      <div class="canales">
+        <app-canal [letra]="'R'" />
+        <app-canal [letra]="'G'" />
+        <app-canal [letra]="'B'" />
+      </div>
+    </section>
+
+    <section aria-label="Muestras de color">
+      <p class="bloque-tit">Color y escala de grises</p>
+      <app-muestras />
+    </section>
+  </div>
+</div>

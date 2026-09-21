@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.muestras {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.muestra {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.chip {
+  height: 124px;
+  transition: background-color 0.35s ease;
+}

@@ -1,0 +1,57 @@
+:host {
+  display: block;
+}
+
+.canal {
+  display: grid;
+  grid-template-columns: 30px auto 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--c);
+  border-radius: 8px;
+}
+
+.canal-r {
+  --c: var(--ch-r);
+}
+
+.canal-g {
+  --c: var(--ch-g);
+}
+
+.canal-b {
+  --c: var(--ch-b);
+}
+
+.letra {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--c);
+  line-height: 1;
+}
+
+.par {
+  width: 3.2em;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ink);
+  background: transparent;
+  border: 1.5px solid var(--c);
+  border-radius: 5px;
+  padding: 2px 6px;
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+}
+
+.par:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--c) 45%, transparent);
+  outline-offset: 1px;
+}

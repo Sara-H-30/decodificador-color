@@ -1,0 +1,15 @@
+<div [class]="clase()">
+  <span class="letra" aria-hidden="true">{{ letra() }}</span>
+
+  <input
+    class="par"
+    type="text"
+    maxlength="2"
+    autocomplete="off"
+    spellcheck="false"
+    [attr.aria-label]="nombre()"
+    [value]="par()"
+    (input)="alEscribirPar($event)"
+    (blur)="alSalir($event)"
+  />
+</div>
